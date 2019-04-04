@@ -1,17 +1,12 @@
 /*
-  Display_Counter.ino - Example for displaying large numbers on LCD displays using the HD44780 driver.
+  DisplayCounter.ino - Example for displaying large numbers on LCD displays with I2C using the HD44780 driver.
   Displays the number of seconds since last boot on the display.
   	
   The circuit:
-  * LCD RS pin to digital pin 12
-  * LCD Enable pin to digital pin 11
-  * LCD D4 pin to digital pin 5
-  * LCD D5 pin to digital pin 4
-  * LCD D6 pin to digital pin 3
-  * LCD D7 pin to digital pin 2
-  * LCD R/W pin to ground
-  * LCD V0 pin to digital pin 9
-  * LCD backlight Anode pin to digital pin 10
+  * LCD SDA pin to digital pin A4
+  * LCD SCL pin to digital pin A5
+  * LCD VCC pin to digital pin VCC(Either 3 or 5V depending on LCD type)
+  * LCD GND pin to digital pin GND
  
   Copyright (C) 2019 Anush DP
  
@@ -41,7 +36,9 @@ void loop()
   int currentTime = millis() / 100; // assigns the current time since boot in tenths of a second to currentTime
   byte lastDigit = currentTime % 10;
   currentTime = currentTime /= 10;
+  
   bigNum.displayLargeInt(currentTime, x, y, 4, false);
+  
   // print out the decimal point and the digit after it
   lcd.setCursor(12, 1);
   lcd.print(".");
