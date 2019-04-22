@@ -10,7 +10,7 @@
  
   Copyright (C) 2019 Anush DP
  
-  Lisence: GPL3 <http://www.gnu.org/licenses/>.
+  License: GPL3 <http://www.gnu.org/licenses/>.
 */
 
 #include <LiquidCrystal_I2C.h> 

@@ -161,16 +161,6 @@ void BigNumbers_I2C::displayLargeInt(int n, byte x, byte y, byte digits, bool le
     {
 	  displayLargeNumber(numString[i], (i * 3) + x, y);
       leading = true;
-	  //if (isNegative)
-      //{
-       // _lcd->setCursor(max(0, (i * 3) - 2 + x), 0);
-		//if(numString[i] == 1)
-		//{
-		//  
-		//}
-		//_lcd->write(45); // "-"
-		//isNegative = false;
-      //}
     }
   }
 }
