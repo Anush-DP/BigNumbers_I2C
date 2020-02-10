@@ -131,7 +131,7 @@ void BigNumbers_I2C::begin()
 // prints an integer to the display using large characters
 // Parameters: n - the integer to display
 //             x - column of upper left corner of first large character
-//             digits - number of digits of the integer (specifiying this allows the digit positions to remain constant when printing out ints of various lengths)
+//             digits - number of digits of the integer (specifying this allows the digit positions to remain constant when printing out ints of various lengths)
 //             leading - sets if leading zeros are printed or not (false = no, true = yes)
 void BigNumbers_I2C::displayLargeInt(int n, byte x, byte y, byte digits, bool leading)
 {

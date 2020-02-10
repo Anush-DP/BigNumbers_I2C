@@ -16,5 +16,5 @@ y -> row<br>
 lnum -> Any integer number (Ex: 452, 23442, etc)<br>
 x -> column<br>
 y -> row<br>
-dig -> number of digits of the integer (specifiying this allows the digit positions to remain constant when printing out ints of various lengths)<br>
+dig -> number of digits of the integer (specifying this allows the digit positions to remain constant when printing out ints of various lengths)<br>
 leading -> sets if leading zeros are printed or not (false = no, true = yes)<br>
