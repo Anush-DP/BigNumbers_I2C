@@ -1,6 +1,6 @@
 /*
   DisplayCounter.ino - Example for displaying large numbers on LCD displays with I2C using the HD44780 driver.
-  Displays the number of seconds since last boot on the display.
+  Displays 0 to 9 in loop.
   	
   The circuit:
   * LCD SDA pin to digital pin A4
