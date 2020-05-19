@@ -3,6 +3,10 @@ I2C version of <a href="https://github.com/seanauff/BigNumbers">BigNumbers.h</a>
 Display large numbers on LCD with I2C using Arduino (or any <a href="https://www.arduino.cc/en/guide/cores">board</a> compatible with Arduino IDE).
 <br><img src="https://i.imgur.com/6BtQfYY.jpg">
 
+# Example video
+[![](http://img.youtube.com/vi/P3EDweeOi98/0.jpg)](http://www.youtube.com/watch?v=P3EDweeOi98 "Example video showing usage of this library")
+
+
 # Syntax
 #### clearLargeNumber(x, y);
 x is column of upper left corner for large character & y is row of upper left corner for large character, i.e.,<br>
